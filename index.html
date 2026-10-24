@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#6425A8">
+    <meta name="description" content="Monte seu açaí favorito na Prime Açaí.">
+
+    <title>Prime Açaí | Cardápio Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="topbar">
+        <a href="#" class="brand">
+            <img
+                src="img/logo.png"
+                alt="Logo Prime Açaí"
+                class="logo-img"
+            >
+        </a>
+
+        <button class="cart-top" id="open-cart">
+            Carrinho <span id="cart-count">0</span>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">O MELHOR AÇAÍ DA REGIÃO</span>
+
+                <h1>
+                    Pensou em açaí<br>
+                    Pensou <em>PRIME.</em>
+                </h1>
+
+                <p>
+                    Monte do seu jeito.
+                    A gente prepara com carinho!
+                </p>
+
+                <a href="#monte" class="primary-btn">
+                    Montar meu açaí <span>→</span>
+                </a>
+            </div>
+
+            <div class="hero-art">
+                <div class="hero-fruit fruit-one">🍓</div>
+
+                <div class="hero-cup">
+                    <div class="cup-topping">🍌 🍓</div>
+
+                    <div class="cup-label">
+                        PRIME<br>
+                        <strong>AÇAÍ</strong>
+                    </div>
+                </div>
+
+                <div class="hero-fruit fruit-two">🍇</div>
+            </div>
+        </section>
+
+        <!-- CARDÁPIO -->
+        <section class="section" id="sabores">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">ESCOLHA SEU FAVORITO</span>
+                    <h2>Clássicos da casa</h2>
+                </div>
+
+                <span class="fresh-label">● Feito na hora</span>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="img/primegold.png"
+                            alt="Açaí Prime Gold
+                             Leite ninho, nutela e granola"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <h3>Açaí Prime Gold</h3>
+                            <strong>R$ 15,00</strong>
+                        </div>
+
+                        <p>Açaí cremoso, leite ninho, nutela e granola.</p>
+
+                        <button
+                            class="outline-btn add-product"
+                            data-name="Açaí prime gold"
+                            data-price="15">
+                            Adicionar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="img/primesupremo.png"
+                            alt="Açaí Prime supremo
+                             Leite ninho, nutela e granola"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <h3>Açaí Prime Supremo</h3>
+                            <strong>R$ 20,00</strong>
+                        </div>
+
+                        <p>Açaí cremoso, banana, morango, leite ninho, nutela, gotas de chocolate.</p>
+
+                        <button
+                            class="outline-btn add-product"
+                            data-name="Açaí prime supremo"
+                            data-price="19">
+                            Adicionar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="img/primepower.png"
+                            alt="Açaí Prime supremo
+                             Leite ninho, nutela e granola"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <h3>Açaí Prime Power</h3>
+                            <strong>R$ 20,00</strong>
+                        </div>
+
+                        <p>Açaí cremoso, morango, granola, amendoin, confeitos.</p>
+
+                        <button
+                            class="outline-btn add-product"
+                            data-name="Açaí prime power"
+                            data-price="20">
+                            Adicionar
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- MONTAGEM PERSONALIZADA -->
+        <section class="builder-section" id="monte">
+
+            <div class="builder-intro">
+                <span class="eyebrow">DO SEU JEITO</span>
+
+                <h2>
+                    Monte seu<br>
+                    <em>copo perfeito.</em>
+                </h2>
+
+                <p>
+                    Escolha o tamanho e adicione
+                    seus acompanhamentos favoritos.
+                </p>
+
+                <div class="builder-illustration">
+                    <div class="builder-cup">
+                        PRIME<br>
+                        <strong>AÇAÍ</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="builder-card">
+
+                <div class="step">
+                    <span>01</span>
+
+                    <div>
+                        <h3>Escolha o tamanho</h3>
+                        <p>Qual tamanho combina com você?</p>
+                    </div>
+                </div>
+
+                <div class="size-options">
+
+                    <label class="size-option">
+                        <input
+                            type="radio"
+                            name="size"
+                            value="300"
+                            data-price="17"
+                            checked>
+
+                        <span>
+                            <strong>300 ml</strong>
+                            <small>Individual</small>
+                            <b>R$ 17,00</b>
+                        </span>
+                    </label>
+
+                    <label class="size-option">
+                        <input
+                            type="radio"
+                            name="size"
+                            value="500"
+                            data-price="22">
+
+                        <span>
+                            <strong>500 ml</strong>
+                            <small>Para aproveitar</small>
+                            <b>R$ 22,00</b>
+                        </span>
+                    </label>
+
+
+                </div>
+
+                <div class="step">
+                    <span>02</span>
+
+                    <div>
+                        <h3>Escolha seus adicionais</h3>
+                        <p>Marque os ingredientes que desejar.</p>
+                    </div>
+                </div>
+
+                <div class="ingredient-list">
+
+                    <label class="ingredient-option">
+                        <input
+                            type="checkbox"
+                            class="ingredient"
+                            value="Banana"
+                            data-price="0">
+
+                        <span></span>
+                        <strong>Banana</strong>
+                        <small>Grátis</small>
+                    </label>
+
+                    <label class="ingredient-option">
+                        <input
+                            type="checkbox"
+                            class="ingredient"
+                            value="Morango"
+                            data-price="2">
+
+                        <span></span>
+                        <strong>Morango</strong>
+                        <small>+ R$ 2,00</small>
+                    </label>
+
+                    <label class="ingredient-option">
+                        <input
+                            type="checkbox"
+                            class="ingredient"
+                            value="Granola"
+                            data-price="1.5">
+
+                        <span></span>
+                        <strong>Granola</strong>
+                        <small>+ R$ 1,50</small>
+                    </label>
+
+                    <label class="ingredient-option">
+                        <input
+                            type="checkbox"
+                            class="ingredient"
+                            value="Leite em pó"
+                            data-price="2">
+
+                        <span></span>
+                        <strong>Leite em pó</strong>
+                        <small>+ R$ 2,00</small>
+                    </label>
+
+                    <label class="ingredient-option">
+                        <input
+                            type="checkbox"
+                            class="ingredient"
+                            value="Leite condensado"
+                            data-price="2">
+
+                        <span></span>
+                        <strong>Leite condensado</strong>
+                        <small>+ R$ 2,00</small>
+                    </label>
+
+                    <label class="ingredient-option">
+                        <input
+                            type="checkbox"
+                            class="ingredient"
+                            value="Paçoca"
+                            data-price="2">
+
+                        <span></span>
+                        <strong>Paçoca</strong>
+                        <small>+ R$ 2,00</small>
+                    </label>
+
+                    <label class="ingredient-option">
+                        <input
+                            type="checkbox"
+                            class="ingredient"
+                            value="Chocolate"
+                            data-price="2.5">
+
+                        <span></span>
+                        <strong>Chocolate</strong>
+                        <small>+ R$ 2,50</small>
+                    </label>
+
+                    <label class="ingredient-option">
+                        <input
+                            type="checkbox"
+                            class="ingredient"
+                            value="Kiwi"
+                            data-price="2.5">
+
+                        <span></span>
+                        <strong>Kiwi</strong>
+                        <small>+ R$ 2,50</small>
+                    </label>
+
+                </div>
+
+                <div class="builder-total">
+                    <div>
+                        <small>Valor do seu copo</small>
+                        <strong id="builder-price">R$ 14,00</strong>
+                    </div>
+
+                    <button class="primary-btn" id="add-custom">
+                        Adicionar ao pedido <span>＋</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MENSAGEM DA MARCA -->
+        <section class="promise-strip">
+            <span>💜</span>
+
+            <div>
+                <strong>Seu açaí, do seu jeito.</strong>
+                <p>Ingredientes selecionados e carinho em cada copo.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <a href="#" class="brand footer-brand">
+            <img
+                src="img/logo.png"
+                alt="Logo Prime Açaí"
+                class="logo-img"
+            >
+        </a>
+
+        <p>Seu dia mais gostoso começa aqui. 💜</p>
+        <small>© 2026 Prime Açaí</small>
+    </footer>
+
+    <!-- BARRA FLUTUANTE DO CARRINHO -->
+    <div class="cart-bar hidden" id="cart-bar">
+        <div>
+            <strong id="bar-count">0 itens</strong>
+            <small id="bar-total">R$ 0,00</small>
+        </div>
+
+        <button class="primary-btn" id="view-order">
+            Ver pedido <span>→</span>
+        </button>
+    </div>
+
+    <!-- PAINEL DO PEDIDO E ENTREGA -->
+    <div class="overlay hidden" id="cart-overlay">
+        <section class="checkout-panel">
+
+            <div class="panel-heading">
+                <div>
+                    <span class="eyebrow">QUASE LÁ!</span>
+                    <h2>Seu pedido</h2>
+                </div>
+
+                <button class="close-btn" id="close-cart">×</button>
+            </div>
+
+            <div id="cart-items" class="cart-items"></div>
+
+            <div class="checkout-total">
+                <span>Total dos produtos</span>
+                <strong id="checkout-total">R$ 0,00</strong>
+            </div>
+
+            <form id="checkout-form">
+
+                <h3>Onde entregamos?</h3>
+
+                <label class="field-label">
+                    Nome completo
+                    <input
+                        type="text"
+                        name="customer"
+                        placeholder="Como podemos te chamar?"
+                        required>
+                </label>
+
+                <label class="field-label">
+                    Telefone / WhatsApp
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="(00) 00000-0000"
+                        required>
+                </label>
+
+                <label class="field-label">
+                    Endereço completo
+                    <input
+                        type="text"
+                        name="address"
+                        placeholder="Rua, número e bairro"
+                        required>
+                </label>
+
+                <label class="field-label">
+                    Complemento
+                    <input
+                        type="text"
+                        name="complement"
+                        placeholder="Casa, apartamento ou referência">
+                </label>
+
+                <label class="field-label">
+                    Forma de pagamento
+                    <select name="payment" required>
+                        <option value="">Selecione</option>
+                        <option value="Pix">Pix</option>
+                        <option value="Dinheiro">Dinheiro</option>
+                        <option value="Cartão de crédito na entrega">
+                            Cartão de crédito na entrega
+                        </option>
+                        <option value="Cartão de débito na entrega">
+                            Cartão de débito na entrega
+                        </option>
+
+                    </select>
+                </label>
+
+                <label class="field-label">
+                    Observações
+                    <textarea
+                        name="notes"
+                        rows="2"
+                        placeholder="Alguma orientação para o pedido?"></textarea>
+                </label>
+
+                <!-- RESUMO FINANCEIRO -->
+                <section class="checkout-section order-summary">
+                    <h3>Resumo do pedido</h3>
+
+                    <div class="summary-line">
+                        <span>Produtos</span>
+                        <strong id="summary-subtotal">R$ 0,00</strong>
+                    </div>
+
+                    <div class="summary-line">
+                        <span>Entrega</span>
+                        <strong id="summary-delivery">R$ 0,00</strong>
+                    </div>
+
+                    <div class="summary-line summary-total">
+                        <span>Total a pagar</span>
+                        <strong id="summary-total">R$ 0,00</strong>
+                    </div>
+                </section>
+
+                <button type="submit" class="primary-btn submit-order">
+                    Confirmar pedido pelo WhatsApp <span>↗</span>
+                </button>
+
+                <p class="form-note">
+                    Confira seus dados antes de confirmar o pedido.
+                </p>
+
+            </form>
+        </section>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
