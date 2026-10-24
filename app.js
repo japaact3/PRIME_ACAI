@@ -529,3 +529,25 @@ if (checkoutForm) {
 updateBuilderPrice();
 updateCheckoutOptions();
 renderCart();
+
+
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/sw.js')
+      .then((registration) => {
+        console.log(
+          'Prime Açaí PWA registrado:',
+          registration.scope
+        );
+      })
+      .catch((error) => {
+        console.error(
+          'Erro ao registrar o PWA:',
+          error
+        );
+      });
+  });
+}
+

@@ -1,0 +1,34 @@
+
+{
+  "id": "/",
+  "name": "Prime Açaí",
+  "short_name": "Prime Açaí",
+  "description": "Monte seu açaí e faça seu pedido pelo Prime Açaí.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#6f2dbd",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
