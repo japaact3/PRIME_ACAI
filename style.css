@@ -1346,3 +1346,243 @@ footer > small {
     display: none !important;
 }
 
+
+
+
+
+
+
+
+
+/* ========================================
+   PRIME AÇAÍ — BANNER PRINCIPAL
+======================================== */
+
+.prime-hero {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: clamp(24px, 4vw, 48px);
+    overflow: hidden;
+    border-radius: 24px;
+    color: #fff;
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(143, 65, 190, 0.42),
+            transparent 38%
+        ),
+        linear-gradient(135deg, #300746 0%, #552080 60%, #40105f 100%);
+}
+
+.prime-hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 240px;
+    height: 240px;
+    right: 10%;
+    bottom: -150px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 24px rgba(255, 255, 255, 0.025),
+        0 0 0 48px rgba(255, 255, 255, 0.02);
+}
+
+.prime-hero-content {
+    min-width: 0;
+}
+
+.prime-hero-tag {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #e3c4ff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    line-height: 1.5;
+}
+
+.prime-hero-content h1 {
+    margin: 0 0 16px;
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.2px;
+    overflow-wrap: break-word;
+}
+
+.prime-hero-content h1 span {
+    display: block;
+    color: #e8c4ff;
+}
+
+.prime-hero-content p {
+    max-width: 420px;
+    margin: 0 0 24px;
+    color: #eee1f7;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.prime-hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 50px;
+    padding: 0 24px;
+    border-radius: 14px;
+    background: #fff;
+    color: #542080;
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.prime-hero-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.prime-hero-button:focus-visible {
+    outline: 3px solid #c8f7d9;
+    outline-offset: 4px;
+}
+
+.prime-hero-benefit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    color: #f0e4f9;
+    font-size: 0.82rem;
+}
+
+.prime-hero-image {
+    position: relative;
+    min-width: 0;
+}
+
+.prime-hero-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    max-height: 430px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 22px;
+    filter: drop-shadow(0 16px 22px rgba(0, 0, 0, 0.22));
+}
+
+.prime-hero-sticker {
+    position: absolute;
+    right: -8px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 12px 16px;
+    border: 3px solid #552080;
+    border-radius: 16px;
+    background: #fff;
+    color: #552080;
+    text-align: center;
+    transform: rotate(4deg);
+}
+
+.prime-hero-sticker span {
+    font-size: 0.72rem;
+}
+
+.prime-hero-sticker strong {
+    font-size: 0.9rem;
+}
+
+/* TABLETS E CELULARES */
+
+@media (max-width: 640px) {
+    .prime-hero {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+        padding: 24px 20px 22px;
+        border-radius: 20px;
+    }
+
+    .prime-hero-tag {
+        margin-bottom: 12px;
+        font-size: 0.67rem;
+        letter-spacing: 1.2px;
+    }
+
+    .prime-hero-content h1 {
+        max-width: 450px;
+        margin-bottom: 12px;
+        font-size: clamp(2rem, 9vw, 2.8rem);
+        line-height: 1.08;
+        letter-spacing: -0.8px;
+    }
+
+    .prime-hero-content p {
+        margin-bottom: 18px;
+        font-size: 0.94rem;
+        line-height: 1.6;
+    }
+
+    .prime-hero-button {
+        width: 100%;
+        min-height: 52px;
+        box-sizing: border-box;
+    }
+
+    .prime-hero-benefit {
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
+
+    .prime-hero-image {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .prime-hero-image img {
+        aspect-ratio: 5 / 4;
+        max-height: 300px;
+        border-radius: 18px;
+    }
+
+    .prime-hero-sticker {
+        right: 8px;
+        bottom: 12px;
+        padding: 9px 12px;
+    }
+}
+
+/* MOVIMENTO REDUZIDO */
+
+@media (prefers-reduced-motion: reduce) {
+    .prime-hero-button {
+        transition: none;
+    }
+}
+
+
+
+
+
+
+
+
+
